@@ -3,9 +3,10 @@ const path = require("path");
 const uuid = require("uuid");
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
-
+const cors = require("cors");
+// const port = process.env.PORT || 3000;
 const app = express();
-
+app.use(cors());
 const bodyParser = require("body-parser");
 
 app.use(bodyParser.json());
