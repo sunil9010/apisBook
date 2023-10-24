@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 const bodyParser = require("body-parser");
 
-app.use(bodyParser.json());
+app.use(express.json());
 
 const dbPath = path.join(__dirname, "goodreads.db");
 
